@@ -25,7 +25,7 @@ app.post('/create-payment-link', async (req, res) => {
     res.redirect(303, paymentLink.checkoutUrl);
 })
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/abc", (req, res) => res.send("Express on Vercel"));
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
