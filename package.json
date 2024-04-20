@@ -2,8 +2,5 @@
   "dependencies": {
     "@payos/node": "^1.0.6",
     "express": "^4.19.2"
-  },
-  "scripts": {
-    "start": "node index.js"
-}
+  }
 }
