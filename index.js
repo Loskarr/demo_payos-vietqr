@@ -19,7 +19,7 @@ app.post('/create-payment-link', async (req, res) => {
         description :'Thanh toan mi tom',
         orderCode: Math.floor(Math.random() * 9007199254740990) + 1,
         returnUrl: `https://drive.google.com/file/d/1DaoW9CH7ri29mHZ5Qtxl6uMo-wH3X4ol/view`,
-        cancelUrl: `${YOUR_DOMAIN}/cancel.html`
+        cancelUrl: `https://demo-casso-g36v549e8-loskarrs-projects.vercel.app/cancel.html`
     }
     const paymentLink = await payos.createPaymentLink(order);
     res.redirect(303, paymentLink.checkoutUrl);
